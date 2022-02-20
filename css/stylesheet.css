@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+body{
+  font-family: 'Lato', sans-serif;
+font-family: 'Noto Serif JP', serif;
+}
+
+.all-wrap{
+  overflow:hidden;
+}
+
+.container {
+    width:1200px;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+}
+
+
+
+@media (max-width:767px){
+  .container{
+    width:95%;
+    margin:auto;
+  }
+}
+
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+
+.title-text {
+    text-align:center;
+    font-weight:bold;
+
+    position:relative;
+    padding-bottom:28px;
+    }
+
+.title-text::after {
+        content: "";
+        background: #17a2b8;
+        width: 60px;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    	transform: translateX(-50%);
+    }    
+
+ .section {
+     padding-top:80px;
+     padding-bottom:120px;
+     height:auto;
+ }   
+
+
+
+
+
+
+
+/*================
+header #FFCC66 黄色  #17a2b8 bg-info-olor
+============*/
+header{
+    width:100%;
+    height:auto;
+    background-color:#17a2b8;
+    position:fixed;
+    z-index:10;
+}
+
+
+
+.header-left img{
+    height:40px;
+    width:205px;
+}
+
+@media (max-width: 767px) {
+  .header-left img{
+    display:block;
+    margin:auto;
+  }
+}
+
+
+.header-right {
+    margin-left:auto;
+}
+
+.header-right li{
+    line-height:70px;
+    margin:0 12px 0 12px;
+    font-size:18px;
+}
+
+.header-right li:hover{
+ border-bottom:solid;
+border-color:white;
+border-width:3px;
+cursor:pointer;
+}
+
+.header-right li a:hover{
+  text-decoration:none;
+}
+
+.current{
+border-bottom:solid;
+border-color:#17a2b8;
+border-width:3px;
+cursor:pointer;
+}
+
+
+
+@media (max-width: 767px){
+  .header-right{
+   display:none;
+  }
+}
+
+
+
+
+
+
+
+/*==================
+section1
+=====================*/
+
+
+
+.section1 {
+    width:100%;
+    height: 800px;
+    background-image: url("../img/beautiful-front-room.jpg");
+    background-size: cover;
+    background-blend-mode:lighten;
+    padding-bottom:14%;
+}
+
+.section1 h1{
+    padding-top:284px;
+    letter-spacing:7px;
+}
+
+.fuchidori {
+  text-shadow:2px 2px 0 #FFF, -2px -2px 0 #FFF,
+              -2px 2px 0 #FFF, 2px -2px 0 #FFF,
+              0px 2px 0 #FFF,  0-2px 0 #FFF,
+              -2px 0 0 #FFF, 2px 0 0 #FFF;
+}
+
+.bgcolorw{
+  background: linear-gradient(to top, white 0% 20%, rgba(0,0,0,0) 50% 50%)
+}
+
+@media (max-width: 767px) {
+  .section1 {
+    height:600px;
+  }
+
+  .section1 h1{
+    font-size:35px;
+    padding-top:250px;
+  }
+}
+
+.section1 p{
+    font-size:24px;
+}
+
+.button01 {
+    text-align:center;
+}
+
+.button01 a {
+background: #17a2b8 0% 0% no-repeat padding-box;
+border-radius: 8px;
+opacity: 1;
+width:384px;
+font-size:25px;
+}
+
+.button01 a:hover{
+  opacity:0.8;
+}
+
+@media (max-width: 767px) {
+  .button01 a{
+    width:150px;
+    padding:10px;
+    font-size:15px;
+  }
+}
+
+
+/*=====================
+理念
+=========================*/
+@media (max-width:767px){
+  .right-concept{
+    margin:auto;
+  }
+}  
+
+
+
+
+/*==============================
+section4
+============*/
+
+
+
+
+
+table.tabletest {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: auto;
+    text-align:center;
+  }
+
+@media (max-width:767px){
+  .tabletest{
+    width:70%;
+    margin:auto;
+  }
+
+  .table-price{
+    overflow-x: auto;
+    margin-top:30px;
+  }
+}  
+  
+  table.tabletest th,
+  table.tabletest td {
+    border: 1px solid #333;
+    vertical-align:middle;
+    padding:13px;
+  }
+
+  th:first-child {
+    width: 170px;
+  }
+
+  @media (max-width:767px){
+    table.tabletest th,
+    table.tabletest td{
+      padding:5px;
+    }
+  }
+
+
+table.tabletest th{
+    background-color: #707070;
+    color:white;
+    font-weight:700;
+    text-align:center;
+}
+
+table.tabletest td{
+    text-align:right;
+    background-color: #fff;
+}
+
+table.tabletest td span{
+    color:red;
+    font-size:13px;
+}
+
+.table-under-text{
+    margin-top:10px;
+}
+
+.table-under-text a{
+    color: #333;
+    text-decoration: underline;
+}
+
+.table-under-text a:hover{
+    color:#333;
+}
+
+
+
+
+/*=======================
+クリニック設備
+=============*/
+
+
+
+/*===========================
+slide-show
+====================*/
+
+.slide_container {
+  margin: 30px auto 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+
+
+.autoplay img{
+  padding:20px;/*画像の周りに余白*/
+  width: 380px;
+  height: 250px;/*横幅に制限*/
+}
+
+@media (max-width:767px){
+  .autoplay img{
+    padding:5px;
+    width: 150px ;
+    height: 100px;
+  }
+}
+
+
+/*==========================
+診察内容
+
+========*/
+
+
+@media (max-width: 767px){
+  .big-cards img{
+    display:none;
+  }
+
+ 
+}
+
+
+
+/*=======================
+アクセス
+=============*/
+
+
+.map__info {
+   width:800px;
+   max-width:100%;
+   margin:auto;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+.iframe-wrp{
+  width:800px;
+  margin:auto;
+}
+
+@media (max-width: 767px){
+  .iframe-wrp{
+    width:350px;
+    margin:auto;
+  }
+}
+
+.google-map {
+  position: relative;
+  width: 100%;
+  padding-top: 50%; /* = height ÷ width × 100 */
+}
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+}
+
+.map__info dt,
+.map__info dd{
+  padding:8px 0;
+  margin:0;
+}
+
+.map__info dt{
+  width:104px;
+  font-weight:700;
+}
+
+@media (max-width: 767px) {
+	.map__info dt {
+		width: 92px;
+	}
+}
+
+.map__info dd{
+  max-width: 100%;
+  width: calc(800px - 118px);
+}
+
+@media (max-width: 767px) {
+	.map__info dd {
+		width: calc(100% - 92px);
+	}
+}
+
+.google-button{
+  text-align:center;
+}
+
+.google-button a{
+  background-color:#17a2b8;
+  border-radius: 8px;
+  opacity: 1;
+ width:300px; 
+ font-size:15px;
+ margin-top:10px;
+}
+
+.google-button a:hover{
+  opacity:0.8;
+}
+
+
+
+
+
+
+  /*======================
+  footer  #CCFFFF水色  #FFCC66黄色
+ ========================= */
+
+ footer{
+   background-color:#17a2b8;
+   padding-top:100px;
+ }
+
+
+
+ .left-footer{
+   max-width:100%;
+   width: calc(100%/2);
+ }
+
+ @media (max-width:767px){
+   .left-footer{
+     width: 200px;
+     margin-right:auto;
+     margin-left:auto;
+     margin-bottom:30px;
+   }
+
+   .left-footer p{
+     text-align:center;
+   }
+ }
+
+ 
+
+ .footer-text p{
+   font-size:13px;
+   margin: 0px;
+ }
+
+ 
+
+ .middle-footer li{
+   font-size:13px;
+ }
+
+ 
+ 
+
+ .footer-bottom{
+   position:relative;
+ }
+
+ 
+ .footer-bottom p{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size:15px;
+ }
+
+ @media (max-width:767px){
+  .footer-bottom p{
+       font-size:5px;
+  } 
+ }
+
+.sample1 {
+  position: relative;
+}
+
+.mask {
+width: 300px;
+height: 100%;
+position: absolute;	/* 絶対位置指定 */
+top: 0;
+left: 0;
+opacity: 0;	/* マスクを表示しない */
+background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+-webkit-transition:	all 0.2s ease;
+transition:	all 0.2s ease;
+}
+
+.sample1:hover .mask {
+opacity:1;	/* マスクを表示する */
+}
+
+  
